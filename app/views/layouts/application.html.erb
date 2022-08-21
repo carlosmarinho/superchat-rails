@@ -12,11 +12,19 @@
     <%= stylesheet_link_tag "style" %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
 
-    # <link rel="stylesheet" href="./css/styles.css" />
+    <!--link rel="stylesheet" href="./css/styles.css" /-->
     <title>Superchat</title>
 </head>
 
 <body>
+  <% unless flash.empty? %>
+    <script type="text/javascript">
+        <% flash.each do |f| %>
+      <% type = f[0].to_s.gsub('alert', 'error').gsub('notice', 'info') %>
+      toastr['<%= type %>']('<%= f[1] %>');
+    <% end %>
+    </script>
+  <% end %>
   <%= yield %>
 </body>
 
