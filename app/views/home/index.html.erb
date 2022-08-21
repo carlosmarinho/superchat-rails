@@ -1,51 +1,53 @@
-<header class="cabecalho">
-        ...
+<section class="header-chat">
+    <div>
+        <div class="header-icons">
+            <h2>Chats</h2>
+            <div class="img-icons">
+                <img class="imagem" src="/images/bell.svg" alt="bell">
+                <img class="imagem" src="/images/apps.svg" alt="square">
+                <img class="imagem" src="/images/more.svg" alt="more">
+            </div>
+        </div>
+        <div class="input-icons">
+            <div class="">
+                <select id="Chats-channel" name="Chats-channel">
+                    <option value="All Chats">All Chats</option>
+                    <option value="Friends">Friends</option>
+                    <option value="Groups">Groups</option>
+                    <option value="Unread">Unread</option>
+                    <option value="Archived">Archived</option>
+                </select>
+            </div>
+            <div class="search">
+                <input type="text" name="search" placeholder="Search users">
+                <button type="submit"><img class="search-img" src="/images/search.svg" alt="search"></button>
+            </div>
+        </div>
+    </div>
+</section>
+<main>
+    <div class="chat">
+        <img class="profile" src="/images/users-1.svg" alt="person-1">
+        <h3 class="people">Tião da Silva<span class="status">Online</span></h3>
+        <p class="text">I'm sorry, I didn't catch that. Coul...</p>
+    </div>
+    <div class="chat">
+        <img class="profile" src="/images/users-2.svg" alt="person-2">
+        <h3 class="people">Maria Carvalho<span class="status">Online</span></h3>
+        <p class="text">I'm sorry, I didn't catch that. Coul...</p>
+    </div>
+    <div class="chat">
+        <img class="profile" src="/images/users-3.svg" alt="person-3">
+        <h3 class="people">Mariane Silva<span class="status">Online</span></h3>
+        <p class="text">I'm sorry, I didn't catch that. Coul...</p>
+    </div>
+    <div class="chat">
+        <img class="profile" src="/images/users-4.svg" alt="person-4">
+        <h3 class="people">John Paul<span class="status">Online</span></h3>
+        <p class="text">I'm sorry, I didn't catch that. Coul...</p>
+    </div>
+</main>
+<footer>
 
-    </header>
-    <section class="secao">
-        <header>
-            <div class="header-icons">
-                <h2>Chats</h2>
-                <div class="img-icons">
-                    <img class="imagem" src="./img/sinos.png" alt="sino">
-                    <img class="imagem" src="./img/application.png" alt="quadrado">
-                    <img class="imagem" src="./img/more.png" alt="três pontos">
-                </div>
-            </div>
-            <div class="input-icons">
-                <div class="">
-                    <select id="Chats-channel" name="Chats-channel">
-                        <option value="All Chats">All Chats</option>
-                        <option value="Friends">Friends</option>
-                        <option value="Groups">Groups</option>
-                        <option value="Unread">Unread</option>
-                        <option value="Archived">Archived</option>
-                    </select>
-                </div>
-                <input type="text" placeholder="Search users">
-            </div>
-        </header>
-    </section>
-    <main>
-        <div class="miolo">
-            <img class="perfil" src="./img/users-1.svg" alt="person-1">
-            <h3 class="pessoa">Tião da Silva<span class="status">Online</span></h3>
-            <p class="texto">I'm sorry, I didn't catch that. Coul...</p>
-        </div>
-        <div class="miolo">
-            <img class="perfil" src="./img/users-1.svg" alt="person-2">
-            <h3 class="pessoa">Maria Carvalho<span class="status">Online</span></h3>
-            <p class="texto">I'm sorry, I didn't catch that. Coul...</p>
-        </div>
-        <div class="miolo">
-            <img class="perfil" src="./img/users-1.svg" alt="person-3">
-            <h3 class="pessoa">Mariane Silva<span class="status">Online</span></h3>
-            <p class="texto">I'm sorry, I didn't catch that. Coul...</p>
-        </div>
-        <div class="miolo">
-            <img class="perfil" src="./img/users-1.svg" alt="person-4">
-            <h3 class="pessoa">John Paul<span class="status">Online</span></h3>
-            <p class="texto">I'm sorry, I didn't catch that. Coul...</p>
-        </div>
-    </main>
-    <script src="./js/script.js"></script>
+</footer>
+<script src="./js/script.js"></script>
