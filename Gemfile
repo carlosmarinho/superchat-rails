@@ -7,12 +7,14 @@ ruby '2.7.5'
 gem 'rails', '~> 6.1.6', '>= 6.1.6.1'
 
 #sqlite3 for development
-#gem 'sqlite3'
+# gem 'sqlite3'
 
 #Postgres for production
 gem 'pg'
 
 gem 'devise'
+
+gem 'rails_admin', '~> 2.0'
 
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
