@@ -15,11 +15,11 @@ class DeviseCreateUsers < ActiveRecord::Migration[6.1]
       t.datetime :remember_created_at
 
       ## Trackable
-      # t.integer  :sign_in_count, default: 0, null: false
-      # t.datetime :current_sign_in_at
-      # t.datetime :last_sign_in_at
-      # t.string   :current_sign_in_ip
-      # t.string   :last_sign_in_ip
+      t.integer  :sign_in_count, default: 0, null: false
+      t.datetime :current_sign_in_at
+      t.datetime :last_sign_in_at
+      t.string   :current_sign_in_ip
+      t.string   :last_sign_in_ip
 
       ## Confirmable
       # t.string   :confirmation_token
@@ -43,7 +43,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[6.1]
 
     # Initialize first account:
     User.create! do |u|
-      u.email     = 'test@test.com'
+      u.email     = 'carlos@test.com'
       u.password    = 'password'
     end
   end
