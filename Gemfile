@@ -8,12 +8,12 @@ gem 'rails', '~> 6.1.6', '>= 6.1.6.1'
 
 # group :development, :test do # <<<< :development, not devlopment
 #   # Use sqlite3 as the database for Active Record
-#   gem 'sqlite3'
+  gem 'sqlite3'
 # end
 
-group :production do
-  gem 'pg', '0.15.1'
-end
+# group :production do
+#   gem 'pg', '0.15.1'
+# end
 
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
