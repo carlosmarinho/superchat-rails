@@ -21,6 +21,9 @@ gem 'rails_admin', '~> 2.0'
 #Users can access
 gem 'cancancan'
 
+#Slim template
+gem "slim-rails"
+
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
 # Use SCSS for stylesheets

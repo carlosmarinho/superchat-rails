@@ -1,0 +1,47 @@
+section.header-chat
+  div
+    .header-icons
+      h2 Chats
+      .img-icons
+        img.imagem alt="bell" src="/images/bell.svg" /
+        img.imagem alt="square" src="/images/apps.svg" /
+        img.imagem alt="more" src="/images/more.svg" /
+    .input-icons
+      div
+        select#Chats-channel name="Chats-channel" 
+          option value=("All Chats")  All Chats
+          option value="Friends"  Friends
+          option value="Groups"  Groups
+          option value="Unread"  Unread
+          option value="Archived"  Archived
+      .search
+        input name="search" placeholder=("Search users") type="text" /
+        button type="submit" 
+          img.search-img alt="search" src="/images/search.svg" /
+main
+  .chat
+    img.profile alt="person-1" src="/images/users-1.svg" /
+    h3.people
+      | Tião da Silva
+      span.status Online
+    p.text I'm sorry, I didn't catch that. Coul...
+  .chat
+    img.profile alt="person-2" src="/images/users-2.svg" /
+    h3.people
+      | Maria Carvalho
+      span.status Online
+    p.text I'm sorry, I didn't catch that. Coul...
+  .chat
+    img.profile alt="person-3" src="/images/users-3.svg" /
+    h3.people
+      | Mariane Silva
+      span.status Online
+    p.text I'm sorry, I didn't catch that. Coul...
+  .chat
+    img.profile alt="person-4" src="/images/users-4.svg" /
+    h3.people
+      | John Paul
+      span.status Online
+    p.text I'm sorry, I didn't catch that. Coul...
+footer
+script src="./js/script.js" 
