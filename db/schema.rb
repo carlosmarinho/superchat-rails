@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_08_21_153418) do
+ActiveRecord::Schema.define(version: 2022_08_21_182403) do
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -28,6 +28,9 @@ ActiveRecord::Schema.define(version: 2022_08_21_153418) do
     t.string "name"
     t.string "username"
     t.date "birthday"
+    t.boolean "superadmin_role", default: false
+    t.boolean "supervisor_role", default: false
+    t.boolean "user_role", default: true
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end

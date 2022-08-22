@@ -12,9 +12,14 @@ gem 'rails', '~> 6.1.6', '>= 6.1.6.1'
 #Postgres for production
 gem 'pg'
 
+#Authentication
 gem 'devise'
 
+#Rails administrator
 gem 'rails_admin', '~> 2.0'
+
+#Users can access
+gem 'cancancan'
 
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
