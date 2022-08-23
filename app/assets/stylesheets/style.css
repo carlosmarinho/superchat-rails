@@ -143,7 +143,7 @@ div .search {
 
 
 /* @todo refactor move to a more approprieted css file */
-.toast-message{
+.toast-error .toast-message{
     color: red;
     font-size: 16px;
     font-weight: bold;
