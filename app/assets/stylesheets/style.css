@@ -97,6 +97,7 @@ div .search {
 
 .profile {
     width: 100%;
+    min-width: 90px;
     padding: 5px;
     border-radius: 50px;
     border: 2px solid #fff;
@@ -136,14 +137,8 @@ footer img {
     cursor: pointer;
 }
 
-
-
-
-
-
-
 /* @todo refactor move to a more approprieted css file */
-.toast-error .toast-message{
+.toast-error .toast-message {
     color: red;
     font-size: 16px;
     font-weight: bold;
