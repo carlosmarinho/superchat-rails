@@ -1,0 +1,23 @@
+form#form action="" onsubmit="" 
+  div
+    #form-image
+      img.form-image alt="Logo" src="./images/logo.svg" /
+    #form-register
+      .div-form
+        label.femail Email:
+        input#femail data-rules="required|email" placeholder="example@chatbot.com" type="email" /
+      .div-form
+        label.fpassword Password:
+        input data-rules="required|min=6" name="password" placeholder="***********" type="password" /
+  .button
+    input#btn-sign type="submit" value=("Sign In!") /
+    div
+      p
+        a href="#registered" target="_blank"  Forgot password?
+  .checkout
+    input#remember name="remember" type="checkbox" /
+    label for="remember"  Remember your account
+  .signup
+    p
+      | Already have an account?
+      a href="#login" target="_blank"  Sign Up
