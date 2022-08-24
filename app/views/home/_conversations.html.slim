@@ -1,50 +1,68 @@
-section.header-chat
+section.header-conversation
   div
     .header-icons
       h2 Chats
-      .img-icons
-        img.imagem alt="bell" src="./images/bell.svg" /
-        img.imagem alt="square" src="./images/apps.svg" /
-        img.imagem alt="more" src="./images/more.svg" /
-    .input-icons
+      .conversation-img-icons
+        img.conversation-imagem alt="bell" src="./images/bell.svg" /
+        img.conversation-imagem alt="square" src="./images/apps.svg" /
+        img.conversation-imagem alt="more" src="./images/more.svg" /
+    .conversation-input-icons
       div
-        select#Chats-channel name="Chats-channel" 
+        select#chats-channel name="chats-channel" 
           option value=("All Chats")  All Chats
           option value="Friends"  Friends
           option value="Groups"  Groups
           option value="Unread"  Unread
           option value="Archived"  Archived
       .search
-        input name="search" placeholder=("Search users") type="text" /
+        input name="search" placeholder=("Search Users") type="text" /
         button type="submit" 
           img.search-img alt="search" src="./images/search.svg" /
 main.main-content
-  .chat
-    img.profile alt="person-1" src="./images/users-1.svg" /
+  .conversation
+    img.person alt="person-1" src="./images/users-1.svg" /
     h3.people
       | Bonnie Torres
       span.status Online
     p.text I'm sorry, I didn't catch that. Coul...
-  .chat
-    img.profile alt="person-2" src="./images/users-2.svg" /
+  .conversation
+    img.person alt="person-2" src="./images/users-2.svg" /
     h3.people
       | Catherine Richardson
       span.status Online
     p.text Jeny: That's pretty common. I ...
-  .chat
-    img.profile alt="person-3" src="./images/users-3.svg" /
+  .conversation
+    img.person alt="person-3" src="./images/users-3.svg" /
     h3.people
       | Eva Walker
       span.status Online
     p.text I'm working hard in Maths, Ph...
-  .chat
-    img.profile alt="person-4" src="./images/users-4.svg" /
+  .conversation
+    img.person alt="person-4" src="./images/users-4.svg" /
     h3.people
       | John Paul
       span.status Online
     p.text Catch you later! Bye-bye!
-  .chat
-    img.profile alt="person-4" src="./images/users-5.svg" /
+  .conversation
+    img.person alt="person-5" src="./images/users-5.svg" /
+    h3.people
+      | Tammy Martinez
+      span.status Online
+    p.text I think I have everything I need, thank you!
+  .conversation
+    img.person alt="person-6" src="./images/users-6.svg" /
+    h3.people
+      | Tammy Martinez
+      span.status Online
+    p.text I think I have everything I need, thank you!
+  .conversation
+    img.person alt="person-7" src="./images/users-7.svg" /
+    h3.people
+      | Tammy Martinez
+      span.status Online
+    p.text I think I have everything I need, thank you!
+  .conversation
+    img.person alt="person-8" src="./images/users-8.svg" /
     h3.people
       | Tammy Martinez
       span.status Online
