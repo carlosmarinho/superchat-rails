@@ -21,6 +21,7 @@ main header {
     margin: 0px 10px;
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
+    padding: 15px 0px;
 }
 
 .header-chat img {
@@ -108,7 +109,7 @@ main header {
     cursor: pointer;
 }
 
-footer .btn {
+div .btn {
     width: 50px;
     height: 50px;
     border: none;
