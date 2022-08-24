@@ -7,22 +7,14 @@
 
 body {
     max-width: 350px;
-    height: 100vh;
-    background-color: #fff;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #545454;
     margin-left: auto;
     margin-right: auto;
+    background-color: #fff;
+    color: #545454;
 }
 
 section {
     border-bottom: 1px solid #aea9fe;
-}
-
-.header-chat {
-    display: flex;
-    flex-direction: column;
 }
 
 .header-icons {
@@ -32,23 +24,31 @@ section {
     justify-content: space-between;
 }
 
-.img-icons {
+.conversation-img-icons {
     display: flex;
     gap: 0.8rem;
 }
 
-.imagem {
-    width: 1.5rem;
-    height: 1.5rem;
+.conversation-imagem {
+    width: 1.2rem;
+    height: 1.2rem;
     cursor: pointer;
 }
 
-.input-icons {
+.conversation-input-icons {
     padding: 0px 0.6rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.conversation-input-icons select {
+    padding: 0.5rem 1.2rem;
+    border: 1px solid #aea9fe;
+    border-radius: 5px;
+    line-height: 2;
+    outline-style: none;
 }
 
 div .search {
@@ -61,6 +61,7 @@ div .search {
 .search input,
 .search button {
     border: none;
+    outline-style: none;
 }
 
 .search-img {
@@ -68,16 +69,9 @@ div .search {
     cursor: pointer;
 }
 
-.input-icons select {
-    padding: 0.5rem 1.2rem;
-    border: 1px solid #aea9fe;
-    border-radius: 5px;
-    line-height: 2;
-}
-
-.chat {
+.conversation {
     width: 95%;
-    margin-top: 1.3rem;
+    margin-top: 1rem;
     margin-left: auto;
     margin-right: auto;
     padding: 0.8rem;
@@ -87,18 +81,17 @@ div .search {
     cursor: pointer;
     display: grid;
     gap: 0.5rem;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 4fr;
 }
 
-.chat:hover {
+.conversation:hover {
     background-color: #665dfe;
     color: #fff;
 }
 
-.profile {
+.person {
     width: 100%;
-    min-width: 90px;
-    padding: 5px;
+    min-width: 45px;
     border-radius: 50px;
     border: 2px solid #fff;
     grid-row: 1/3;
@@ -120,7 +113,7 @@ div .search {
     grid-column: 2/3;
 }
 
-footer {
+.conversation-footer {
     height: 3.5rem;
     background-color: #665dfe;
     padding: 10px;
@@ -132,8 +125,8 @@ footer {
     bottom: 0px;
 }
 
-footer img {
-    width: 1.8rem;
+.footer-icon-conversation {
+    width: 1.4rem;
     cursor: pointer;
 }
 
