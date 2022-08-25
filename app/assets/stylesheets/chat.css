@@ -1,8 +1,5 @@
-main header {
-    border-bottom: 1px solid #aea9fe;
-}
-
 .header-chat {
+    border-bottom: 1px solid #aea9fe;
     margin: 0px 10px;
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
