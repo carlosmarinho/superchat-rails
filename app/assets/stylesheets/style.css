@@ -16,6 +16,10 @@ section {
     border-bottom: 1px solid #aea9fe;
 }
 
+main {
+    display: flex;
+}
+
 .header-icons {
     padding: 0.6rem;
     display: flex;
@@ -112,7 +116,7 @@ div .search {
     grid-column: 2/3;
 }
 
-.conversation-footer {
+footer.footer {
     height: 3.5rem;
     background-color: #665dfe;
     padding: 10px;
@@ -122,6 +126,10 @@ div .search {
     left: 0px;
     right: 0px;
     bottom: 0px;
+    
+}
+
+.conversation-footer {
 }
 
 .footer-icon-conversation {

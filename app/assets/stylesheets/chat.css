@@ -1,3 +1,13 @@
+.chat-content {
+    display: none;
+}
+
+@media screen and (min-width : 400px) {
+    .chat-content {
+        display: block;
+    }
+}
+
 .header-chat {
     border-bottom: 1px solid #aea9fe;
     margin: 0px 10px;
