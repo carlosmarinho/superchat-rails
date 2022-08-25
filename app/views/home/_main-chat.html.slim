@@ -1,0 +1,23 @@
+section.header-conversation
+  div
+    .header-icons
+      h2 Chats
+      .conversation-img-icons
+        img.conversation-imagem alt="bell" src="./images/bell.svg" /
+        img.conversation-imagem alt="square" src="./images/apps.svg" /
+        img.conversation-imagem alt="more" src="./images/more.svg" /
+    .conversation-input-icons
+      div
+        select#chats-channel name="chats-channel" 
+          option value=("All Chats")  All Chats
+          option value="Friends"  Friends
+          option value="Groups"  Groups
+          option value="Unread"  Unread
+          option value="Archived"  Archived
+      .search
+        input name="search" placeholder=("Search Users") type="text" /
+        button type="submit" 
+          img.search-img alt="search" src="./images/search.svg" /
+main.main-content
+  = render "conversations"
+  = render "chat"
