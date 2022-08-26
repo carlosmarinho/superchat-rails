@@ -1,24 +1,33 @@
+.conversation-content
+  /! conversation header
   section.header-conversation
-  div
-    .header-icons
-      h2 Chats
-      .conversation-img-icons
-        img.conversation-imagem alt="bell" src="./images/bell.svg" /
-        img.conversation-imagem alt="square" src="./images/apps.svg" /
-        img.conversation-imagem alt="more" src="./images/more.svg" /
-    .conversation-input-icons
-      div
-        select#chats-channel name="chats-channel" 
-          option value=("All Chats")  All Chats
-          option value="Friends"  Friends
-          option value="Groups"  Groups
-          option value="Unread"  Unread
-          option value="Archived"  Archived
-      .search
-        input name="search" placeholder=("Search Users") type="text" /
-        button type="submit" 
-          img.search-img alt="search" src="./images/search.svg" /
-
+    div
+      .header-icons
+        h2 Chats
+        .conversation-img-icons
+          img.conversation-imagem alt="bell" src="./images/bell.svg" /
+          #btn-square
+            img.conversation-imagem alt="square" src="./images/apps.svg" /
+            .list-image-square
+              ul
+                li notes
+                li settings
+                li to-do
+                li translation
+          img.conversation-imagem alt="more" src="./images/more.svg" /
+      .conversation-input-icons
+        div
+          select#chats-channel name="chats-channel" 
+            option value=("All Chats")  All Chats
+            option value="Friends"  Friends
+            option value="Groups"  Groups
+            option value="Unread"  Unread
+            option value="Archived"  Archived
+        .search
+          input name="search" placeholder=("Search Users") type="text" /
+          button type="submit" 
+            img.search-img alt="search" src="./images/search.svg" /
+  /! conversation content
   .conversation-chat
     .conversation
       img.person alt="person-1" src="./images/users-1.svg" /
@@ -68,3 +77,4 @@
         | Tammy Martinez
         span.status Online
       p.text I think I have everything I need, thank you!
+

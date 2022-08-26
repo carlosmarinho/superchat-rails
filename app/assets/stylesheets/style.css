@@ -5,19 +5,67 @@
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+/* Header */
+
+.header-fix {
+    display: block;
+    background-color: #665dfe;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.header-fix div {
+    color: #fff;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-fix img {
+    width: 50px;
+    border-radius: 25px;
+}
+
+.header-fix-content div {
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.logout img {
+    padding: 5px;
+    width: 40px;
+}
+
+/* Body */
+
 body {
     margin-left: auto;
     margin-right: auto;
     background-color: #fff;
     color: #545454;
-}
-
-section {
-    border-bottom: 1px solid #aea9fe;
-}
-
-main {
     display: flex;
+}
+
+#chat {
+    display: none;
+}
+
+/* header Conversation */
+
+.conversation-content {
+    max-width: 350px;
+    min-width: 350px;
+    position: relative;
+    top: 75px;
+}
+
+.header-conversation {
+    border-bottom: 1px solid #aea9fe;
 }
 
 .header-icons {
@@ -25,6 +73,14 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.list-image-square {
+    position: relative;
+    padding: 10px;
+    line-height: 1.5;
+    background-color: #38e615;
+    list-style-type: none;
 }
 
 .conversation-img-icons {
@@ -72,6 +128,8 @@ div .search {
     cursor: pointer;
 }
 
+/* Content Conversation */
+
 .conversation {
     width: 95%;
     margin-top: 1rem;
@@ -116,20 +174,19 @@ div .search {
     grid-column: 2/3;
 }
 
-footer.footer {
+/* Footer Conversation */
+
+.footer {
+    max-width: 350px;
     height: 3.5rem;
     background-color: #665dfe;
-    padding: 10px;
+    padding: 10px 0px;
     display: flex;
     justify-content: space-around;
     position: fixed;
     left: 0px;
     right: 0px;
     bottom: 0px;
-    
-}
-
-.conversation-footer {
 }
 
 .footer-icon-conversation {
@@ -142,4 +199,16 @@ footer.footer {
     color: red;
     font-size: 16px;
     font-weight: bold;
+}
+
+@media (min-width: 350px) {
+    #chat {
+        display: block;
+        min-width: 350px;
+    }
+
+    .header-conversation,
+    .conversation-chat {
+        border-right: 1px solid #aea9fe;
+    }
 }
