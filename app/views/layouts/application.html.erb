@@ -19,6 +19,13 @@
 
 <body>
   <%= render "layouts/header" %>
+
+  <% if current_user.avatar.present? %>
+  <%= image_tag(current_user.avatar.variant(resize_to_fill: [50, 50]), class: "rounded-circle") %>
+  <% else %>
+  <img alt="image" class="rounded-circle" src="/assets/default_avatar_small.jpg">
+  <% end %>
+  
   <% unless flash.empty? %>
     <script type="text/javascript">
         <% flash.each do |f| %>
@@ -27,7 +34,10 @@
     <% end %>
     </script>
   <% end %>
+  
+  
   <%= yield %>
+  
   <%= render "layouts/footer" %>
 </body>
 

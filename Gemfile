@@ -15,6 +15,11 @@ gem 'pg'
 #Authentication
 gem 'devise'
 
+#validation files
+gem 'file_validators'
+
+gem 'image_processing', '~> 1.2'
+
 #Rails administrator
 gem 'rails_admin', '~> 2.0'
 

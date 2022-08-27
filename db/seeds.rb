@@ -13,3 +13,7 @@ User.create!(email: 'cadu@gmail.com', password: '123456', name: 'Cadu Silva', us
 User.create!(email: 'juca@gmail.com', password: '123456', name: 'Carlos Silva Pai', username: "juca", birthday: "18/02/1960")
 User.create!(email: 'marli@gmail.com', password: '123456', name: 'Marli França', username: "marli", birthday: "12/12/1960")
 User.create!(email: 'sueli@gmail.com', password: '123456', name: 'Sueli da Costa Silva', username: "sueli", birthday: "10/04/1956")
+User.create!(email: 'bonnietorres@gmail.com', password: '123456', name: 'Bonnie Torres', username: "bonnietorres", birthday: "10/04/1956")
+User.create!(email: 'evawalker@gmail.com', password: '123456', name: 'Eva Walker', username: "evawalker", birthday: "10/04/1956")
+User.create!(email: 'johnpaul@gmail.com', password: '123456', name: 'John Paul', username: "johnpaul", birthday: "10/04/1956")
+User.create!(email: 'tammymartinez@gmail.com', password: '123456', name: 'Tammy Martinez', username: "tammymartinez", birthday: "10/04/1956")
