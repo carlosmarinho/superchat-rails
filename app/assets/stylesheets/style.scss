@@ -1,0 +1,73 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* Body */
+body {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    color: #545454;
+}
+
+
+.header-fix {
+    display: block;
+    background-color: #665dfe;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.header-fix div {
+    color: #fff;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-fix img {
+    width: 50px;
+    border-radius: 25px;
+}
+
+.header-fix-content div {
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.logout img {
+    padding: 5px;
+    width: 40px;
+}
+
+/* @todo refactor move to a more approprieted css file */
+.toast-error .toast-message {
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+@media (min-width: 350px) {
+    #chat {
+        display: block;
+        min-width: 350px;
+    }
+
+    .header-conversation,
+    .conversation-chat {
+        border-right: 1px solid #aea9fe;
+    }
+}
+
+main {
+    display: flex;
+}
+

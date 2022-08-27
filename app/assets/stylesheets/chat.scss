@@ -1,16 +1,18 @@
-/* .chat-content {
+.chat-content {
     display: none;
+        position: relative;
+    top: 75px;
 }
 
 @media screen and (min-width : 400px) {
     .chat-content {
         display: block;
     }
-} */
 
-.chat-content {
-    position: relative;
-    top: 75px;
+    .header-icons-2,
+    .header-icons-1 {
+        visibility: hidden;
+    }
 }
 
 .header-chat {
@@ -37,19 +39,14 @@
     justify-items: center;
 }
 
-@media (min-width: 350px) {
-    .header-icons-2,
-    .header-icons-1 {
-        visibility: hidden;
-    }
-}
+
 
 #profile-1 {
     width: 95%;
     margin-top: 1rem;
     margin-left: auto;
     margin-right: auto;
-    padding: 1rem 3rem;
+    padding: 1rem 3rem; /**/
     line-height: 1.5;
     background-color: #eee;
     color: #9296b1;
@@ -67,8 +64,8 @@
     width: 95%;
     margin-top: 1rem;
     margin-left: auto;
-    margin-right: auto;
-    padding: 1rem 3rem;
+    margin-right: auto; 
+    padding: 1rem 3rem; /**/
     line-height: 1.5;
     background-color: #665dfe;
     color: #eee;
@@ -87,7 +84,7 @@
 }
 
 .profile-img {
-    width: 100%;
+    width: 80px;
     min-width: 50px;
     padding: 5px;
     border-radius: 50px;
@@ -95,7 +92,7 @@
 }
 
 .chat-footer {
-    min-width: 350px;
+    min-width: 350px; 
     background-color: #eee;
     border-top: 1px solid #aea9fe;
     height: 4rem;
@@ -107,18 +104,11 @@
     position: fixed;
     left: 350px;
     right: 0px;
-    bottom: 0px;
+    bottom: 57px;
 }
 
 .chat-footer img {
     width: 1.2rem;
-    cursor: pointer;
-}
-
-div .btn {
-    width: 50px;
-    height: 50px;
-    border: none;
     cursor: pointer;
 }
 
@@ -133,8 +123,11 @@ div .btn {
     outline-style: none;
 }
 
-.btn {
-    width: 100px;
+.chat-footer button {
+    width: 50px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
     border-radius: 50px;
     background-color: #665dfe;
 }
