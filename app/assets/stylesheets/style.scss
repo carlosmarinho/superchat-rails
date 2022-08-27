@@ -14,7 +14,7 @@ body {
 }
 
 
-.header-fix {
+header {
     display: block;
     background-color: #665dfe;
     position: absolute;
@@ -22,7 +22,7 @@ body {
     right: 0;
 }
 
-.header-fix div {
+header div {
     color: #fff;
     padding: 5px;
     display: flex;
@@ -31,7 +31,7 @@ body {
     justify-content: space-between;
 }
 
-.header-fix img {
+header img {
     width: 50px;
     border-radius: 25px;
 }
