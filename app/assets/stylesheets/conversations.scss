@@ -1,6 +1,16 @@
+@media screen and (min-width : 400px) {
+    .conversation-content {
+        max-width: 400px;
+    }
+
+    .header-conversation,
+    .conversation-chat {
+        border-right: 1px solid #aea9fe;
+    }
+}
+
 .conversation-content {
-    max-width: 350px;
-    min-width: 350px;
+    min-width: 250px;
     position: relative;
     top: 75px;
 }
