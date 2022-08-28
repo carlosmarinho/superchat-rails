@@ -45,9 +45,9 @@ User.create!(email: 'johnpaul@gmail.com', password: '123456', name: 'John Paul',
 User.create!(email: 'tammymartinez@gmail.com', password: '123456', name: 'Tammy Martinez', username: "tammymartinez", birthday: "10/04/1956")
 
 userMain = User.where("email=?", 'carlos@hotmail.com').first
+users = User.where("email!=?", 'carlos@hotmail.com')
 
-# creating randon Convusers = User.where("email!=?", 'carlos@hotmail.com')
-ersationTexts
+# creating Conversations
 users.each { |user| 
 
   my_rand = rand (1..3)
