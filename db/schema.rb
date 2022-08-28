@@ -42,8 +42,8 @@ ActiveRecord::Schema.define(version: 2022_08_27_142930) do
 
   create_table "conversations", force: :cascade do |t|
     t.string "user"
-    t.integer "writer_id_id", null: false
-    t.integer "listener_id_id", null: false
+    t.integer "writer_id_id"
+    t.integer "listener_id_id"
     t.string "conversation"
     t.datetime "time"
     t.datetime "created_at", precision: 6, null: false
@@ -77,6 +77,6 @@ ActiveRecord::Schema.define(version: 2022_08_27_142930) do
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
-  add_foreign_key "conversations", "listener_ids"
-  add_foreign_key "conversations", "writer_ids"
+  add_foreign_key "conversations", "users", column: "listener_id_id"
+  add_foreign_key "conversations", "users", column: "writer_id_id"
 end
