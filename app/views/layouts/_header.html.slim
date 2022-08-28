@@ -1,9 +1,6 @@
 header
   .header-fix-content
-    - if current_user.present? && current_user.avatar.present?
-      = image_tag current_user.avatar.variant(resize_to_fill: [50, 50])
-    - else 
-      = image_tag "default_avatar_small.svg"
+    = render "layouts/avatar", user: current_user
     h4 
       = current_user.present? ? "Welcome #{current_user.name}!" : 'Welcome!'
   

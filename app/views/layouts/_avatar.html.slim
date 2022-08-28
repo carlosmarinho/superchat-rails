@@ -1,0 +1,4 @@
+    - if user.present? && user.avatar.present?
+      = image_tag user.avatar.variant(resize_to_fill: [50, 50])
+    - else 
+      = image_tag "default_avatar_small.svg", class: 'person'

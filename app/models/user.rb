@@ -10,5 +10,10 @@ class User < ApplicationRecord
   ## Validations
      validates :avatar, file_size: { less_than_or_equal_to: 5.megabytes },
               file_content_type: { allow: ['image/jpeg', 'image/png', 'image/gif'] }
-              
+  
+  def self.get_conversations(user_id)
+    # puts "current_user: ", User.current_scope
+    Conversation.where("writer_id = ?", user_id)
+  end
+
 end
