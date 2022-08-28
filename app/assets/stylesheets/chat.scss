@@ -1,10 +1,10 @@
 .chat-content {
     display: none;
-        position: relative;
+    position: relative;
     top: 75px;
 }
 
-@media screen and (min-width : 400px) {
+@media screen and (min-width: 400px) {
     .chat-content {
         display: block;
     }
@@ -39,14 +39,12 @@
     justify-items: center;
 }
 
-
-
 #profile-1 {
     width: 95%;
     margin-top: 1rem;
     margin-left: auto;
     margin-right: auto;
-    padding: 1rem 3rem; /**/
+    padding: 1rem; /**/
     line-height: 1.5;
     background-color: #eee;
     color: #9296b1;
@@ -64,8 +62,8 @@
     width: 95%;
     margin-top: 1rem;
     margin-left: auto;
-    margin-right: auto; 
-    padding: 1rem 3rem; /**/
+    margin-right: auto;
+    padding: 1rem; /**/
     line-height: 1.5;
     background-color: #665dfe;
     color: #eee;
@@ -92,7 +90,7 @@
 }
 
 .chat-footer {
-    min-width: 350px; 
+    min-width: 350px;
     background-color: #eee;
     border-top: 1px solid #aea9fe;
     height: 4rem;
@@ -104,7 +102,7 @@
     position: fixed;
     left: 350px;
     right: 0px;
-    bottom: 57px;
+    bottom: 48px;
 }
 
 .chat-footer img {
