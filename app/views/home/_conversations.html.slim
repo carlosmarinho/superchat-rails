@@ -5,7 +5,8 @@ section.conversation-content
       .header-icons
         h2 Chats
         .conversation-img-icons
-          img.conversation-imagem alt="bell" src="./images/bell.svg" /
+          #btn-bell
+            img.conversation-imagem alt="bell" src="./images/bell.svg" /
           #btn-square
             img.conversation-imagem alt="square" src="./images/apps.svg" /
             .list-image-square
@@ -14,7 +15,14 @@ section.conversation-content
                 li settings
                 li to-do
                 li translation
-          img.conversation-imagem alt="more" src="./images/more.svg" /
+          #btn-more
+            img.conversation-imagem alt="more" src="./images/more.svg" /
+            .list-image-more
+              ul
+                li notes1
+                li settings2
+                li to-do2
+                li translation3
       .conversation-input-icons
         div
           select#chats-channel name="chats-channel" 
@@ -27,8 +35,9 @@ section.conversation-content
           input name="search" placeholder=("Search Users") type="text" /
           button type="submit" 
             img.search-img alt="search" src="./images/search.svg" /
- 
+
   /! conversation content
+  
   .conversation-chat
     .conversation
       img.person alt="person-1" src="./images/users-1.svg" /

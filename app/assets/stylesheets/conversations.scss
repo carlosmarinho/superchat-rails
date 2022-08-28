@@ -26,12 +26,22 @@
     justify-content: space-between;
 }
 
-.list-image-square {
-    position: relative;
-    padding: 10px;
-    line-height: 1.5;
-    background-color: #38e615;
+.list-image-square,
+.list-image-more {
+    display: none;
+    position: absolute;
+    line-height: 2;
+    right: 45px;
+    top: 35px;
+}
+
+.list-image-square ul,
+.list-image-more ul {
+    background-color: #f00;
     list-style-type: none;
+    padding: 15px;
+    z-index: 10000;
+    border-radius: 4px;
 }
 
 .conversation-img-icons {
@@ -124,4 +134,3 @@ div .search {
     font-size: 1rem;
     grid-column: 2/3;
 }
-
