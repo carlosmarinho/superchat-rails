@@ -55,18 +55,6 @@ header img {
     font-weight: bold;
 }
 
-@media (min-width: 350px) {
-    #chat {
-        display: block;
-        min-width: 350px;
-    }
-
-    .header-conversation,
-    .conversation-chat {
-        border-right: 1px solid #aea9fe;
-    }
-}
-
 main {
     display: flex;
 }
