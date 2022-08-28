@@ -1,4 +1,4 @@
-@media screen and (min-width : 400px) {
+@media screen and (min-width: 400px) {
     .conversation-content {
         max-width: 400px;
     }
@@ -10,9 +10,12 @@
 }
 
 .conversation-content {
-    min-width: 250px;
+    max-width: 350px;
+    min-width: 350px;
     position: relative;
     top: 75px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .header-conversation {
