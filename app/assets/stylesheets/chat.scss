@@ -98,7 +98,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    gap: 0.3rem;
+    gap: 1rem;
     position: fixed;
     left: 350px;
     right: 0px;
@@ -119,6 +119,7 @@
     border: none;
     border-radius: 0.5rem;
     outline-style: none;
+    flex: 1 1 auto;
 }
 
 .chat-footer button {
