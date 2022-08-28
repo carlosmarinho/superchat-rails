@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_08_27_142930) do
+ActiveRecord::Schema.define(version: 2022_08_28_155257) do
 
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
@@ -40,16 +40,28 @@ ActiveRecord::Schema.define(version: 2022_08_27_142930) do
     t.index ["blob_id", "variation_digest"], name: "index_active_storage_variant_records_uniqueness", unique: true
   end
 
-  create_table "conversations", force: :cascade do |t|
-    t.string "user"
-    t.integer "writer_id_id"
-    t.integer "listener_id_id"
-    t.string "conversation"
+  create_table "conversation_texts", force: :cascade do |t|
+    t.integer "conversation_id", null: false
+    t.integer "writer_id"
+    t.integer "listener_id"
+    t.string "conversation_text"
     t.datetime "time"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["listener_id_id"], name: "index_conversations_on_listener_id_id"
-    t.index ["writer_id_id"], name: "index_conversations_on_writer_id_id"
+    t.index ["conversation_id"], name: "index_conversation_texts_on_conversation_id"
+    t.index ["listener_id"], name: "index_conversation_texts_on_listener_id"
+    t.index ["writer_id"], name: "index_conversation_texts_on_writer_id"
+  end
+
+  create_table "conversations", force: :cascade do |t|
+    t.integer "writer_id"
+    t.integer "listener_id"
+    t.datetime "first"
+    t.datetime "last"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["listener_id"], name: "index_conversations_on_listener_id"
+    t.index ["writer_id"], name: "index_conversations_on_writer_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -77,6 +89,9 @@ ActiveRecord::Schema.define(version: 2022_08_27_142930) do
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
-  add_foreign_key "conversations", "users", column: "listener_id_id"
-  add_foreign_key "conversations", "users", column: "writer_id_id"
+  add_foreign_key "conversation_texts", "conversations"
+  add_foreign_key "conversation_texts", "users", column: "listener_id"
+  add_foreign_key "conversation_texts", "users", column: "writer_id"
+  add_foreign_key "conversations", "users", column: "listener_id"
+  add_foreign_key "conversations", "users", column: "writer_id"
 end

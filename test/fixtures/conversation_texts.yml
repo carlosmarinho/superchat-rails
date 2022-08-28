@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  conversation: one
+  writer: one
+  listener: one
+  conversation: MyString
+  time: 2022-08-28 12:52:57
+
+two:
+  conversation: two
+  writer: two
+  listener: two
+  conversation: MyString
+  time: 2022-08-28 12:52:57
