@@ -47,9 +47,10 @@
     padding: 1rem; /**/
     line-height: 1.5;
     background-color: #f4f4ff;
-    color: #aea9fe;
+    color: #545454;
     border-radius: 1rem;
     display: grid;
+    justify-items: start;
     grid-template-columns: 1fr 5fr;
 }
 
@@ -69,6 +70,7 @@
     color: #f4f4ff;
     border-radius: 1rem;
     display: grid;
+    justify-items: end;
     grid-template-columns: 5fr 1fr;
 }
 
