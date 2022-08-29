@@ -40,11 +40,12 @@
 
 .list-image-square ul,
 .list-image-more ul {
-    background-color: #f00;
+    background-color: #f8f9fa;
     list-style-type: none;
     padding: 15px;
     z-index: 10000;
     border-radius: 4px;
+    box-shadow: 2 2 rgba(0, 0, 0, 0.5);
 }
 
 .conversation-img-icons {
