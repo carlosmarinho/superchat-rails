@@ -7,26 +7,23 @@ section.chat-content
     p Online
   /! chat content
   div.content-chat
-    #profile-1.chat
-      img.profile-img alt="person-1" src="./images/users-1.svg" /
-      p
-        | No, I have not thought about that. I better get some statistics from the Internet. I should not have
-        | any problems since the Internet has all kinds of data.
-      span 9:12am ...
-    #profile-2.chat
-      img.profile-img alt="person-2" src="./images/users-2.svg" /
-      p
-        | Pictures will keep your audience from being bored. in order for you to succeed, you need to keep
-        | them
-        | interested and involved.
-      span 9:12am ...
-    #profile-1.chat
-      img.profile-img alt="person-1" src="./images/users-1.svg" /
-      p
-        | You are absolutely right. I will take time to practice and to learn to relax and express myself
-        | really well. Wish me luck, Catherine!
-      span 9:12am ...
-  /! chat footer
+    - @conversations_selected.each do |text|
+      - if text.writer_id == current_user.id 
+        #profile-1.chat
+          = render "layouts/avatar", user: text.writer
+          p 
+            = text.conversation_text  
+          span
+            = format_date text.time
+      - else  
+        #profile-2.chat
+          = render "layouts/avatar", user: text.writer
+          p 
+            = text.conversation_text  
+          span
+            = format_date text.time
+
+
   .chat-footer
     img alt="added" src="./images/circle-add.svg" /
     input.input-footer placeholder=("Type your message here...") /
