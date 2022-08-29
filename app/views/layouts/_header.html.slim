@@ -1,6 +1,7 @@
 header
   .header-fix-content
-    = render "layouts/avatar", user: current_user
+    - if current_user.present?
+      = render "layouts/avatar", user: current_user
     h4 
       = current_user.present? ? "Welcome #{current_user.name}!" : 'Welcome!'
   
