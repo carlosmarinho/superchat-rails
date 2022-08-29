@@ -1,7 +1,13 @@
 var btn = document.querySelector('#btn-square');
-var btn2 = document.querySelector('#btn-more');
 var container = document.querySelector('.list-image-square');
+
+var btn2 = document.querySelector('#btn-more');
 var container2 = document.querySelector('.list-image-more');
+
+var conversation = document.querySelector('.conversation');
+var chat = document.querySelector('.content-chat');
+
+var back = document.querySelector('.header-icons-2');
 
 btn.addEventListener('click', function () {
     if (container.style.display === 'block') {
@@ -9,8 +15,6 @@ btn.addEventListener('click', function () {
     } else {
         container.style.display = 'block';
     }
-
-    console.log('o que', container);
 });
 
 btn2.addEventListener('click', function () {
@@ -19,6 +23,18 @@ btn2.addEventListener('click', function () {
     } else {
         container2.style.display = 'block';
     }
+});
 
-    console.log('o que', container2);
+conversation.addEventListener('click', function () {
+    if (chat.style.display === 'block') {
+        chat.style.display = 'none';
+    } else {
+        chat.style.display = 'block';
+    }
+});
+
+back.addEventListener('click', function () {
+    if (chat.style.display === 'none') {
+        chat.style.display = 'block';
+    }
 });
