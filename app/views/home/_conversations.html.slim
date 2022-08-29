@@ -40,7 +40,7 @@ section.conversation-content
   
   .conversation-chat
     - @conversations.each do |conversation|
-      .conversation
+      .conversation data-conversation-id="#{conversation.id}"
         = render "layouts/avatar", user: conversation.listener
         h3.people
           = conversation.listener.name.present? ? conversation.listener.name : conversation.listener.email
