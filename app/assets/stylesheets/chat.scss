@@ -77,11 +77,17 @@
     margin-right: 0.5rem;
 }
 
+span {
+    font-size: 0.7rem;
+    font-style: italic;
+}
+
 #profile-2 img {
     grid-column: 2;
 }
 
-#profile-2 img, #profile-1 img  {
+#profile-2 img,
+#profile-1 img {
     width: 80px;
     min-width: 50px;
     padding: 5px;
