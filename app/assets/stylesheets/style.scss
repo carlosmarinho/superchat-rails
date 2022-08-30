@@ -59,9 +59,19 @@ header a {
 /* @todo refactor move to a more approprieted css file */
 .toast-error .toast-message {
     color: red;
+}
+
+.toast-info .toast-message {
+    color: green;
+}
+
+.toast-error div, .toast-info div{
     font-size: 16px;
     font-weight: bold;
+    width: 100%;
+    text-align: center;
 }
+
 
 main {
     display: flex;
