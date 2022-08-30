@@ -112,7 +112,12 @@ div .search {
 
 .conversation:hover {
     background-color: #665dfe;
-    color: #fff;
+    color: #f8f9fa;
+}
+
+.conversation:active {
+    background-color: #aea9fe;
+    border: 1px solid #665dfe;
 }
 
 .person,
@@ -120,7 +125,7 @@ div .search {
     width: 100%;
     min-width: 45px;
     border-radius: 50px;
-    border: 2px solid #fff;
+    border: 2px solid #f8f9fa;
     grid-row: 1/3;
 }
 
