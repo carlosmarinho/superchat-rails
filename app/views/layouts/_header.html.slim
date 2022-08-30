@@ -1,11 +1,13 @@
 header
   .header-fix-content
-    = image_tag "logo.svg", :alt => "Logo"
-    .user-info
-      - if current_user.present?
-        = render "layouts/avatar", user: current_user
-      h4 
-        = current_user.present? ? "Welcome #{current_user.name}!" : 'Welcome!'
+    = link_to "/"
+      = image_tag "logo.svg", :alt => "Logo", :class => "logo-img"
+    = link_to edit_user_registration_path(current_user)
+      .user-info
+        - if current_user.present?
+          = render "layouts/avatar", user: current_user
+        h4 
+          = current_user.present? ? "Welcome #{current_user.name}!" : 'Welcome!'
   
     - if current_user.present?
       .logout
