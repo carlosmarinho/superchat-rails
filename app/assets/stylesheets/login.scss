@@ -1,14 +1,20 @@
+/* esse estilização não está funcionando, 
+preciso que ela seja o Body das páginas de cadastros*/
+
+body {
+    max-width: 350px;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #d5d2ff;
+    color: #545454;
+    display: flex;
+    justify-content: center;
+}
+
 .login_page {
     background-color: #d5d2ff;
 }
-
-// body {
-//     margin-left: auto;
-//     margin-right: auto;
-//     background-color: #d5d2ff;
-//     color: #545454;
-//     height: 100vh;
-// }
 
 form {
     margin-left: auto;
@@ -20,7 +26,7 @@ form {
 }
 
 form img {
-    width: 230px;
+    width: 320px;
     margin-left: auto;
     margin-right: auto;
     padding: 1rem;
@@ -29,7 +35,7 @@ form img {
 }
 
 .form-register {
-    padding: 1.3rem;
+    padding: 1rem;
     line-height: 2;
     display: flex;
     flex-direction: column;
@@ -74,7 +80,8 @@ form img {
     text-align: right;
 }
 
-.signup .checkout {
+.signup,
+.checkout {
     padding: 20px 0px;
 }
 

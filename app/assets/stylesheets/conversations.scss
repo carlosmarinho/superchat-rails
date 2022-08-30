@@ -43,7 +43,14 @@
     padding: 15px;
     z-index: 10000;
     border-radius: 4px;
-    box-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 90px;
+    right: 360px;
+    box-shadow: 3px 3px rgb(0 0 0 / 8%);
+}
+
+.list-image-more ul {
+    right: 330px;
 }
 
 .conversation-img-icons {
