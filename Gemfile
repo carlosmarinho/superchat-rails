@@ -7,7 +7,7 @@ ruby '2.7.5'
 gem 'rails', '~> 6.1.6', '>= 6.1.6.1'
 
 #sqlite3 for development
-# gem 'sqlite3'
+gem 'sqlite3'
 
 #Postgres for production
 gem 'pg'
