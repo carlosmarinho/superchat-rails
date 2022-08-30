@@ -44,6 +44,14 @@ back.addEventListener('click', function () {
     }
 });
 
+const backConversation = document.getElementById('back-to-conversation');
+backConversation.addEventListener('click', function () {
+  const conversation = document.querySelector('.conversation-content');
+  conversation.style.display = 'block';
+
+  const chat = document.querySelector('.chat-content');
+  chat.style.display = 'none';
+});
 
 const sendButton = document.getElementById('send-button');
 sendButton.addEventListener('click', function () {
