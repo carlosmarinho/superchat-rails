@@ -4,9 +4,11 @@
     top: 75px;
 }
 
+
 @media screen and (min-width: 400px) {
     .chat-content {
         display: block;
+        width: 100%;
     }
 
     .header-icons-2,
@@ -14,6 +16,7 @@
         visibility: hidden;
     }
 }
+
 
 .header-chat {
     border-bottom: 1px solid #aea9fe;
