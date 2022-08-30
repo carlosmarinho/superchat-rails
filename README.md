@@ -116,6 +116,13 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser. S
    We can use I18n to have more than one language on our application. We have an item on our menu for this, but it's need implementation.
 ### Implement the following pages
 
+### Change the views/layouts/application.html.erb to slim file
+
+   Change the views/layouts/application.html.erb to a slim file
+
+### Move toaster to the header
+
+   Move toaster to the header, today it's located at views/layouts/application.html.erb to the views/layouts/_header.html.slim
 #### Open socket to handle the chat
 
   - Today all the conversations is stored in the database, and we should reload the page or use some ajax fashion to update the conversation, we should improve our application using socket to conversation, that will prevent reloads or/and requests and the performance will be much higher. 
