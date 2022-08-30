@@ -12,8 +12,6 @@
 .conversation-content {
     max-width: 350px;
     min-width: 350px;
-    position: relative;
-    top: 75px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -45,7 +43,7 @@
     padding: 15px;
     z-index: 10000;
     border-radius: 4px;
-    box-shadow: 2 2 rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 .conversation-img-icons {

@@ -1,12 +1,13 @@
 .login_page
   = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
     = image_tag "logo.svg", :alt => "Logo"
-    .div-form
-      label.femail Email:
-      input#femail data-rules="required|email" name="user[email]" placeholder="example@chatbot.com" type="email" /
-    .div-form
-      label.fpassword Password:
-      input data-rules="required|min=6" name="user[password]" placeholder="***********" type="password" /
+    .form-register
+      .div-form
+        label.femail Email:
+        input#femail data-rules="required|email" name="user[email]" placeholder="example@chatbot.com" type="email" /
+      .div-form
+        label.fpassword Password:
+        input data-rules="required|min=6" name="user[password]" placeholder="***********" type="password" /
     .button
       input#btn-sign type="submit" value=("Sign In!") /
       div

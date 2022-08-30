@@ -1,9 +1,6 @@
 .chat-content {
     display: none;
-    position: relative;
-    top: 75px;
 }
-
 
 @media screen and (min-width: 400px) {
     .chat-content {
@@ -16,7 +13,6 @@
         visibility: hidden;
     }
 }
-
 
 .header-chat {
     border-bottom: 1px solid #aea9fe;
