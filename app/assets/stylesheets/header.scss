@@ -3,6 +3,11 @@ header {
     min-height: 60px;
 }
 
+header .logo-img {
+    width: 160px;
+    height: 40px;
+}
+
 header div {
     color: #f8f9fa;
     padding: 5px;
@@ -13,8 +18,9 @@ header div {
 }
 
 header img {
-    width: 50px;
+    width: 35px;
     border-radius: 25px;
+    padding: 0;
 }
 
 header a,
@@ -31,6 +37,11 @@ header a {
     display: flex;
     flex-direction: column;
     cursor: pointer;
+    padding: 0;
+}
+
+.user-info h4 {
+    display: none;
 }
 
 .logout img {
@@ -52,4 +63,30 @@ header a {
     font-weight: bold;
     width: 100%;
     text-align: center;
+}
+
+@media screen and (min-width: 400px) {
+    header .logo-img {
+        width: 200px;
+    }
+
+    header img {
+        width: 40px;
+    }
+
+    .user-info h4 {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    header .logo-img {
+        width: 240px;
+    }
+    .user-info h4 {
+        display: block;
+        text-align: center;
+    }
+
 }
