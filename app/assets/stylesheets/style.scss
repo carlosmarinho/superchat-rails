@@ -16,63 +16,6 @@ body {
     color: #545454;
 }
 
-header {
-    background-color: #665dfe;
-    min-height: 60px;
-}
-
-header div {
-    color: #f8f9fa;
-    padding: 5px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-header img {
-    width: 50px;
-    border-radius: 25px;
-}
-
-header a,
-header h4 {
-    color: #f8f9fa;
-}
-
-header a {
-    text-decoration: none;
-}
-
-.header-fix-content div {
-    font-size: 0.8rem;
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.logout img {
-    padding: 5px;
-    width: 40px;
-}
-
-/* @todo refactor move to a more approprieted css file */
-.toast-error .toast-message {
-    color: red;
-}
-
-.toast-info .toast-message {
-    color: green;
-}
-
-.toast-error div, .toast-info div{
-    font-size: 16px;
-    font-weight: bold;
-    width: 100%;
-    text-align: center;
-}
-
-
 main {
     display: flex;
 }
