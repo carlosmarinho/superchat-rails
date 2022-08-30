@@ -1,9 +1,11 @@
 header
   .header-fix-content
-    - if current_user.present?
-      = render "layouts/avatar", user: current_user
-    h4 
-      = current_user.present? ? "Welcome #{current_user.name}!" : 'Welcome!'
+    = image_tag "logo.svg", :alt => "Logo"
+    .user-info
+      - if current_user.present?
+        = render "layouts/avatar", user: current_user
+      h4 
+        = current_user.present? ? "Welcome #{current_user.name}!" : 'Welcome!'
   
     - if current_user.present?
       .logout
