@@ -52,5 +52,6 @@ sendButton.addEventListener('click', function () {
   const avatar = document.querySelector('.profile-2 img').src;
 
   chat.innerHTML += `<div class="chat profile-2"><img src="${avatar}"><p>${text}</p><span>${new Date()}</span></div>`;
+	document.getElementById('input-footer').value = '';
   // window.scrollBottom();
 });
