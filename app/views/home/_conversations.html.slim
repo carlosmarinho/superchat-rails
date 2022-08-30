@@ -40,10 +40,19 @@ section.conversation-content
   
   .conversation-chat
     - @conversations.each do |conversation|
-      .conversation data-conversation-id="#{conversation.id}"
-        = render "layouts/avatar", user: conversation.listener
-        h3.people
-          = conversation.listener.name.present? ? conversation.listener.name : conversation.listener.email
-          span.status Online
-        p.text 
-          = conversation.conversation_text.last.conversation_text
+      - if(conversation.id == @conversations_selected.first.conversation_id)
+        .conversation.conversation_active data-conversation-id="#{conversation.id}"
+          = render "layouts/avatar", user: conversation.listener
+          h3.people
+            = conversation.listener.name.present? ? conversation.listener.name : conversation.listener.email
+            span.status Online
+          p.text 
+            = conversation.conversation_text.last.conversation_text
+      - else
+        .conversation data-conversation-id="#{conversation.id}"
+          = render "layouts/avatar", user: conversation.listener
+          h3.people
+            = conversation.listener.name.present? ? conversation.listener.name : conversation.listener.email
+            span.status Online
+          p.text 
+            = conversation.conversation_text.last.conversation_text
