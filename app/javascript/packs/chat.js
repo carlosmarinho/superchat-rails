@@ -44,8 +44,13 @@ back.addEventListener('click', function () {
     }
 });
 
-function Send() {
-    var env = document.getElementById('input-footer').value;
 
-    console.log('o que é isso...', env);
-}
+const sendButton = document.getElementById('send-button');
+sendButton.addEventListener('click', function () {
+  const chat = document.querySelector('.content-chat');
+  const text = document.getElementById('input-footer').value;
+  const avatar = document.querySelector('.profile-2 img').src;
+
+  chat.innerHTML += `<div class="chat profile-2"><img src="${avatar}"><p>${text}</p><span>${new Date()}</span></div>`;
+  // window.scrollBottom();
+});

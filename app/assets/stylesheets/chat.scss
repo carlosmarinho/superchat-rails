@@ -42,7 +42,7 @@
     justify-items: center;
 }
 
-#profile-1 {
+.profile-1 {
     width: 95%;
     margin-top: 1rem;
     margin-left: auto;
@@ -57,12 +57,12 @@
     grid-template-columns: 1fr 5fr;
 }
 
-#profile-1 p,
-#profile-1 span {
+.profile-1 p,
+.profile-1 span {
     margin-left: 0.5rem;
 }
 
-#profile-2 {
+.profile-2 {
     width: 95%;
     margin-top: 1rem;
     margin-left: auto;
@@ -77,8 +77,8 @@
     grid-template-columns: 5fr 1fr;
 }
 
-#profile-2 p,
-#profile-2 span {
+.profile-2 p,
+.profile-2 span {
     margin-right: 0.5rem;
 }
 
@@ -87,12 +87,12 @@ span {
     font-style: italic;
 }
 
-#profile-2 img {
+.profile-2 img {
     grid-column: 2;
 }
 
-#profile-2 img,
-#profile-1 img {
+.profile-2 img,
+.profile-1 img {
     width: 80px;
     min-width: 50px;
     padding: 5px;

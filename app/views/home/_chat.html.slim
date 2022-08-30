@@ -10,14 +10,14 @@ section.chat-content
   div.content-chat
     - @conversations_selected.each do |text|
       - if text.writer_id == current_user.id 
-        #profile-2.chat
+        .profile-2.chat
           = render "layouts/avatar", user: text.writer
           p 
             = text.conversation_text  
           span
             = format_date text.time
       - else  
-        #profile-1.chat
+        .profile-1.chat
           = render "layouts/avatar", user: text.writer
           p 
             = text.conversation_text  
@@ -27,7 +27,7 @@ section.chat-content
 
   .chat-footer
     img alt="added" src="./images/circle-add.svg" /
-    input#input-footer.input-footer value=("Text here...")  placeholder=("Type your message here...") /
+    input#input-footer.input-footer  placeholder=("Type your message here...") /
     img alt="emoticon" src="./images/emoticon-icon.svg" /
-    button.btn :onclick => "Send()"
+    button#send-button.btn 
       img alt="" src="./images/arrow-send.svg" /
