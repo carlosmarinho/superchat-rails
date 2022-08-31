@@ -119,12 +119,16 @@ div .search {
 
 .person,
 .conversation img {
-    width: 100%;
     min-width: 45px;
     border-radius: 50px;
     border: 2px solid #f8f9fa;
     grid-row: 1/3;
 }
+
+.conversation img {
+    width: 100%;
+}
+
 
 .people {
     display: flex;
