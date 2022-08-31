@@ -107,13 +107,21 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser. S
 
   As the urgency and the lack of time I couldn't do any tests yet, but we were supposed to do the test as soon as possible
 
-#### CSS, HTML
+### CSS, HTML, JS, Ajax
 
 #### Refactor CSS to SASS
    Although we use a extension '.scss' I really didn't implement anything with sass, so it's really necessary to refactor this css part
 
-### Treat Error handling right
-   Instead of showing a simple alert we should open a modal with the possible errors
+#### Change the views/layouts/application.html.erb to slim file
+
+   Change the views/layouts/application.html.erb to a slim file
+
+#### Refactor some pages from devise that is still in .erb
+
+   Refactor some pages from devise that is still in .erb to .slim, 
+#### Treat Error handling right when sending message
+
+   If we got an error attempting to send the messege, instead of showing a simple alert we should open a modal with the possible errors 
 
 #### Ajax interactions when change conversations
 
@@ -124,9 +132,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser. S
    We can use I18n to have more than one language on our application. We have an item on our menu for this, but it's need implementation.
 ### Implement the following pages
 
-### Change the views/layouts/application.html.erb to slim file
 
-   Change the views/layouts/application.html.erb to a slim file
+
 
 ### Move toaster to the header
 
