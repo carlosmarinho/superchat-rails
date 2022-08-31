@@ -1,5 +1,7 @@
 footer
-  = image_tag "chat.svg", :alt => "Chat conversation icon"
+  = link_to "/"
+    = image_tag "chat.svg", :alt => "Chat conversation icon"
   = image_tag "phone.svg", :alt => "Phone icon"
   = image_tag "people-speak.svg", :alt => "People speaking icon"
-  = image_tag "person.svg", :alt => "Person icon"
+  = link_to edit_user_registration_path(current_user)
+    = image_tag "person.svg", :alt => "Person icon"

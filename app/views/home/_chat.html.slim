@@ -1,9 +1,9 @@
 section.chat-content
   /! chat header
   div.header-chat
-    img.header-icons-2 alt="back" src="./images/arrow.svg" /
+    img#back-to-conversation.header-icons-2 alt="back" src="./images/arrow.svg" /
     h4 
-      = @conversations_selected.first.listener.name
+      = @conversations_selected.first.listener.name.present? ? @conversations_selected.first.listener.name : @conversations_selected.first.listener.email
     img.header-icons-1 alt="more" src="./images/more.svg" /
     p Online
   /! chat content

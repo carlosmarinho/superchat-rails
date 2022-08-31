@@ -1,15 +1,5 @@
-@media screen and (min-width: 400px) {
-    .conversation-content {
-        max-width: 400px;
-    }
-
-    .header-conversation,
-    .conversation-chat {
-        border-right: 1px solid #aea9fe;
-    }
-}
-
 .conversation-content {
+    display: none;
     max-width: 350px;
     min-width: 350px;
     margin-left: auto;
@@ -19,6 +9,22 @@
 .header-conversation {
     border-bottom: 1px solid #aea9fe;
 }
+
+@media screen and (min-width: 400px) {
+    .conversation-content {
+        display: block;
+        max-width: 400px;
+    }
+
+    .header-conversation,
+    .conversation-chat {
+        border-right: 1px solid #aea9fe;
+    }
+}
+
+
+
+
 
 .header-icons {
     padding: 0.6rem;
