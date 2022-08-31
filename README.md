@@ -112,6 +112,9 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser. S
 #### Refactor CSS to SASS
    Although we use a extension '.scss' I really didn't implement anything with sass, so it's really necessary to refactor this css part
 
+### Treat Error handling right
+   Instead of showing a simple alert we should open a modal with the possible errors
+
 #### Ajax interactions when change conversations
 
    Because lack of time we didn't implement this, and today when we change conversations we add the conversation-id in the url and reload the page.
