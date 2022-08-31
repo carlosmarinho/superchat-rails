@@ -27,6 +27,9 @@ section.chat-content
 
   .chat-footer
     img alt="added" src="./images/circle-add.svg" /
+    input#hidden_writer_id type="hidden" name="writer_id" value="#{current_user.id}"
+    input#hidden_listener_id type="hidden" name="listener_id" value="#{@conversations_selected.first.listener_id}"
+    input#hidden_conversation_id type="hidden" name="listener_id" value="#{@conversations_selected.first.conversation_id}"
     input#input-footer.input-footer  placeholder=("Type your message here...") /
     img alt="emoticon" src="./images/emoticon-icon.svg" /
     button#send-button.btn 

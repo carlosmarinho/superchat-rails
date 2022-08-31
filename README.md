@@ -107,10 +107,33 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser. S
 
   As the urgency and the lack of time I couldn't do any tests yet, but we were supposed to do the test as soon as possible
 
-#### CSS, HTML
+### CSS, HTML, JS, Ajax
+
+#### Search Users 
+
+   On the conversations left side we have search bar, to search users that is not working
+
+#### Chat filters
+
+   On the conversations left side we have a filtering that is not implemented to filter conversations by type
 
 #### Refactor CSS to SASS
    Although we use a extension '.scss' I really didn't implement anything with sass, so it's really necessary to refactor this css part
+
+#### Change the views/layouts/application.html.erb to slim file
+
+   Change the views/layouts/application.html.erb to a slim file
+
+#### Refactor some pages from devise that is still in .erb
+
+   Refactor some pages from devise that is still in .erb to .slim, 
+
+#### Move toaster to the header
+
+   Move toaster to the header, today it's located at views/layouts/application.html.erb to the views/layouts/_header.html.slim
+#### Treat Error handling right when sending message
+
+   If we got an error attempting to send the messege, instead of showing a simple alert we should open a modal with the possible errors 
 
 #### Ajax interactions when change conversations
 
@@ -121,16 +144,13 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser. S
    We can use I18n to have more than one language on our application. We have an item on our menu for this, but it's need implementation.
 ### Implement the following pages
 
-### Change the views/layouts/application.html.erb to slim file
+#### Invite
 
-   Change the views/layouts/application.html.erb to a slim file
+  - It's extremily important to create a invite page where users can send invitation to others users, or can add an user that is already in the application 
 
-### Move toaster to the header
+#### Notifications
 
-   Move toaster to the header, today it's located at views/layouts/application.html.erb to the views/layouts/_header.html.slim
-#### Open socket to handle the chat
-
-  - Today all the conversations is stored in the database, and we should reload the page or use some ajax fashion to update the conversation, we should improve our application using socket to conversation, that will prevent reloads or/and requests and the performance will be much higher. 
+  - We can implement a notifications moda, and when there is notifications we can add red flag besides the bell icon
 
 #### Notes
 
@@ -143,4 +163,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser. S
 #### Calls
 
   - It would be interest to have a feature to do audio or video calls.
+
+### Open socket to handle the chat
+
+  - Today all the conversations is stored in the database, and we should reload the page or use some ajax fashion to update the conversation, we should improve our application using socket to conversation, that will prevent reloads or/and requests and the performance will be much higher. 
 
