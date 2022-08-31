@@ -1,18 +1,3 @@
-.registrations {
-}
-
-div input .form-control {
-    color: brown;
-}
-
-.container h3 {
-}
-
-.container p {
-    padding: 10px;
-    font-style: italic;
-}
-
 .edit_user .form-group {
     display: flex;
     flex-direction: column;
@@ -34,7 +19,7 @@ div input .form-control {
 
 .edit_user_registrations h3,
 .edit_user_registrations p {
-    padding: 10px;
+    padding: 5px;
 }
 
 .edit_user_registrations p {
@@ -42,9 +27,11 @@ div input .form-control {
 }
 
 .button_to input {
-    margin-top: 10px;
-    background-color: aqua;
+    padding: 10px 20px;
+    color: #f8f9fa;
+    background-color: #665dfe;
     border-radius: 5px;
-    padding: 5px;
     outline: none;
+    font-weight: bold;
+    cursor: pointer;
 }

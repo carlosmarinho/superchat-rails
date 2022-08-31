@@ -1,16 +1,5 @@
 .chat-content {
-    display: block;    
-}
-
-@media screen and (min-width: 400px) {
-    .chat-content {
-        width: 100%;
-    }
-
-    .header-icons-2,
-    .header-icons-1 {
-        visibility: hidden;
-    }
+    display: block;
 }
 
 .header-chat {
@@ -135,4 +124,20 @@ span {
     cursor: pointer;
     border-radius: 50px;
     background-color: #665dfe;
+}
+
+@media screen and (min-width: 400px) {
+    .chat-content {
+        width: 100%;
+    }
+
+    .chat-footer {
+        position: fixed;
+        left: 0px;
+    }
+
+    .header-icons-2,
+    .header-icons-1 {
+        visibility: hidden;
+    }
 }
