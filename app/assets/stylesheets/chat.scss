@@ -94,8 +94,8 @@ span {
     align-items: center;
     justify-content: space-around;
     gap: 1rem;
-    // position: fixed;
-    left: 400px;
+    position: fixed;
+    left: 0px;
     right: 0px;
     bottom: 48px;
 }
@@ -132,8 +132,8 @@ span {
     }
 
     .chat-footer {
-        // position: fixed;
-        left: 0px;
+        position: fixed ;
+        left: 400px;
     }
 
     .header-icons-2,

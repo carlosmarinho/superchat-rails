@@ -1,10 +1,11 @@
 .conversation-content {
     display: none;
-    max-width: 350px;
-    min-width: 350px;
+    max-width: 400px;
+    min-width: 400px;
     margin-left: auto;
     margin-right: auto;
 }
+
 
 .header-conversation {
     border-bottom: 1px solid #aea9fe;
@@ -138,6 +139,7 @@ div .search {
 }
 
 @media screen and (min-width: 400px) {
+
     .conversation-content {
         display: block;
     }
