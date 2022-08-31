@@ -80,7 +80,7 @@ sendButton.addEventListener('click', async function () {
     if (response.status == 200) {
       chat.innerHTML += `<div class="chat profile-2"><img src="${avatar}"><p>${text}</p><span>${new Date()}</span></div>`;
       document.getElementById('input-footer').value = '';
-      // window.scrollBottom();
+      window.scrollTo(0, document.body.scrollHeight);
     } else {
       /* @todo implement a modal showing the errors */
       alert('Oops something went wront!');
