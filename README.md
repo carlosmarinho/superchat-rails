@@ -103,6 +103,10 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser. S
 
 ## @TODO and Refactories
 
+### Heroku issues with the avatar Images.
+
+   Need to check what happens with heroku, when we do new deploy or any other event happens there (on Heroku) it kind of delete heroku active_storage and the image is deleted, and we end up with some avatars images broken
+
 ### Test
 
   As the urgency and the lack of time I couldn't do any tests yet, but we were supposed to do the test as soon as possible
