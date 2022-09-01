@@ -148,6 +148,10 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser. S
    We can use I18n to have more than one language on our application. We have an item on our menu for this, but it's need implementation.
 ### Implement the following pages
 
+#### Home Page for new users
+
+   We need to implement this new page, when a new users join this user won't have any conversations, and it is showing the home conversation chat, but this page is supposed to be shown only for users tha has conversations, and for this reason the home page it seems to be broken for a new user.
+
 #### Invite
 
   - It's extremily important to create a invite page where users can send invitation to others users, or can add an user that is already in the application 
