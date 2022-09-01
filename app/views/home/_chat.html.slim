@@ -1,11 +1,15 @@
 section.chat-content
   /! chat header
   div.header-chat
-    img#back-to-conversation.header-icons-2 alt="back" src="./images/arrow.svg" /
-    h4 
-      = @conversations_selected.first.listener.name.present? ? @conversations_selected.first.listener.name : @conversations_selected.first.listener.email
-    img.header-icons-1 alt="more" src="./images/more.svg" /
-    p Online
+    - if(@conversations_selected.length > 0)
+      img#back-to-conversation.header-icons-2 alt="back" src="./images/arrow.svg" /
+      h4 
+        = @conversations_selected.first.listener.name.present? ? @conversations_selected.first.listener.name : @conversations_selected.first.listener.email
+      img.header-icons-1 alt="more" src="./images/more.svg" /
+      p Online
+    - else
+      span
+      h4 You don't have any conversation yet. (add a new conversation is not implemented yet)
   /! chat content
   div.content-chat
     - @conversations_selected.each do |text|
@@ -27,9 +31,10 @@ section.chat-content
 
   .chat-footer
     img alt="added" src="./images/circle-add.svg" /
-    input#hidden_writer_id type="hidden" name="writer_id" value="#{current_user.id}"
-    input#hidden_listener_id type="hidden" name="listener_id" value="#{@conversations_selected.first.listener_id}"
-    input#hidden_conversation_id type="hidden" name="listener_id" value="#{@conversations_selected.first.conversation_id}"
+    - if(@conversations_selected.length > 0)
+      input#hidden_writer_id type="hidden" name="writer_id" value="#{current_user.id}"
+      input#hidden_listener_id type="hidden" name="listener_id" value="#{@conversations_selected.first.listener_id}"
+      input#hidden_conversation_id type="hidden" name="listener_id" value="#{@conversations_selected.first.conversation_id}"
     input#input-footer.input-footer  placeholder=("Type your message here...") /
     img alt="emoticon" src="./images/emoticon-icon.svg" /
     button#send-button.btn 

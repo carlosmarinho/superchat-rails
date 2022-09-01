@@ -4,7 +4,7 @@ class HomeController < ApplicationController
     @conversations = User.get_conversations(current_user.id)
 
     if(@conversation_id.nil?)
-      @conversations_selected = @conversations.first.conversation_text
+      @conversations_selected = @conversations.present? ? conversations.first.conversation_text : []
     else 
       @conversations.each do |conversation| 
         if(conversation.id == params[:id].to_i)
